@@ -6,8 +6,8 @@ local L = DBM_GUI_L
 L.MainFrame = "Deadly Boss Mods"
 
 L.TranslationByPrefix		= "Retail backport von "
-L.TranslationBy			= "Barsoom, Bunny67, Zidras"
-L.Website					= "Besuche uns auf Discord: |cFF73C2FBhttps://discord.gg/CyVWDWS|r."
+L.TranslationBy			= "Barsoom, Bunny67, Zidras, KS"
+L.Website					= "Besuche uns auf Discord: |cFF73C2FBhttps://discord.gg/335|r."
 L.WebsiteButton				= "Webseite"
 
 L.OTabBosses	= "Bosse"

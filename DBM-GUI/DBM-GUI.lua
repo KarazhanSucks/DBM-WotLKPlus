@@ -804,15 +804,16 @@ do
 	local category = {}
 	local subTabId = 0
 	local expansions = {
-		"CLASSIC", "BC", "WOTLK"
+		"CLASSIC", "BC", "WOTLK", "CATA", "MOP", "WOD", "LEG", "BFA", "SHADOWLANDS"
 	}
 
+	local expansionNames = {"Classic","The Burning Crusade","Wrath of the Lich King","Cataclysm","Mists of Pandaria","Warlords of Draenor","Legion","Battle for Azeroth","Shadowlands"}
 	function DBM_GUI:UpdateModList()
 		for _, addon in ipairs(DBM.AddOns) do
 			local cat = addon.category:upper()
 			if not category[cat] then
 				-- Create a Panel for "Wrath of the Lich King", "The Burning Crusade", "Classic" or "Other"
-				category[cat] = DBM_GUI:CreateNewPanel(_G["EXPANSION_NAME" .. (tIndexOf(expansions, cat) or 99) - 1] or L.TabCategory_OTHER, nil, cat == expansions[GetExpansionLevel() + 1])
+				category[cat] = DBM_GUI:CreateNewPanel(expansionNames[tIndexOf(expansions, cat)] or L.TabCategory_OTHER, nil, cat == expansions[GetExpansionLevel() + 1])
 			end
 
 			if not addon.panel then

@@ -6,8 +6,8 @@ local L = DBM_GUI_L
 L.MainFrame = "Deadly Boss Mods"
 
 L.TranslationByPrefix		= "Retail rétroportage par "
-L.TranslationBy			= "Barsoom, Bunny67, Zidras"
-L.Website					= "Rendez-nous visite sur discord à |cFF73C2FBhttps://discord.gg/CyVWDWS|r"
+L.TranslationBy			= "Barsoom, Bunny67, Zidras, KS"
+L.Website					= "Rendez-nous visite sur discord à |cFF73C2FBhttps://discord.gg/335|r"
 L.WebsiteButton				= "Site web"
 
 L.OTabBosses	= "Bosses"--Deprecated and will be deleted once tabs no longer use this

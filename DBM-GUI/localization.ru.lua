@@ -79,8 +79,8 @@ L.Lowest							= "Наименьший таймер наверху"
 -- Missing phrases. End ..
 
 L.TranslationByPrefix		= "Retail backport by "
-L.TranslationBy				= "Barsoom, Bunny67, Zidras"
-L.Website					= "Discord для обсуждения: |cFF73C2FBhttps://discord.gg/CyVWDWS|r"
+L.TranslationBy				= "Barsoom, Bunny67, Zidras, KS"
+L.Website					= "Discord для обсуждения: |cFF73C2FBhttps://discord.gg/335|r"
 L.WebsiteButton				= "Форумы"
 
 L.OTabBosses				= "Боссы"

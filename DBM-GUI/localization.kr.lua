@@ -4,8 +4,8 @@ if not DBM_GUI_L then DBM_GUI_L = {} end
 local L = DBM_GUI_L
 
 L.TranslationByPrefix		= "백포트 "
-L.TranslationBy			= "Barsoom, Bunny67, Zidras"
-L.Website					= "디스코드 채널 |cFF73C2FBhttps://discord.gg/CyVWDWS|r를 방문해 보세요."
+L.TranslationBy			= "Barsoom, Bunny67, Zidras, KS"
+L.Website					= "디스코드 채널 |cFF73C2FBhttps://discord.gg/335|r를 방문해 보세요."
 L.WebsiteButton				= "웹사이트"
 
 L.OTabBosses	= "보스"--Deprecated and will be deleted once tabs no longer use this

@@ -4,10 +4,10 @@ local L = DBM_GUI_L
 
 L.MainFrame = "Deadly Boss Mods"
 
-L.DBMWarmane				= "DBM-Warmane by Zidras"
+L.DBMWotLKPlus				= "DBM-WotLKPlus by KS"
 L.TranslationByPrefix		= "Retail backport by "
-L.TranslationBy			= "Barsoom, Bunny67, Zidras"
-L.Website					= "Visit us on discord at |cFF73C2FBhttps://discord.gg/CyVWDWS|r"
+L.TranslationBy			= "Barsoom, Bunny67, Zidras, KS"
+L.Website					= "Visit us on discord at |cFF73C2FBhttps://discord.gg/335|r"
 L.WebsiteButton				= "Website"
 
 L.OTabBosses	= "Bosses"--Deprecated and will be deleted once tabs no longer use this
