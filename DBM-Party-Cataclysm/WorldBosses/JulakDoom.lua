@@ -1,9 +1,9 @@
 local mod	= DBM:NewMod("JulakDoom", "DBM-Party-Cataclysm", 15)
 local L		= mod:GetLocalizedStrings()
 
-mod.statTypes = "normal,timewalker"
+mod.statTypes = "normal,heroic,mythic"
 
-mod:SetRevision("@file-date-integer@")
+mod:SetRevision("20220712225019KSA")
 mod:SetCreatureID(50089)
 mod:SetModelID(24301)
 mod:SetUsedIcons(8, 7)

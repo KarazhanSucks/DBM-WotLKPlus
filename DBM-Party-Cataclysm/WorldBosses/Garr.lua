@@ -1,9 +1,9 @@
 local mod	= DBM:NewMod("Garr", "DBM-Party-Cataclysm", 15)
 local L		= mod:GetLocalizedStrings()
 
-mod.statTypes = "normal,timewalker"
+mod.statTypes = "normal,heroic,mythic"
 
-mod:SetRevision("@file-date-integer@")
+mod:SetRevision("20220712225019KSA")
 mod:SetCreatureID(50056)
 mod:SetModelID(37307)
 mod:EnableWBEngageSync()--Enable syncing engage in outdoors

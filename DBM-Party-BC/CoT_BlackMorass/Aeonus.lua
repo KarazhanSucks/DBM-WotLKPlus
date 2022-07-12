@@ -1,7 +1,8 @@
 local mod	= DBM:NewMod(554, "DBM-Party-BC", 12, 255)
 local L		= mod:GetLocalizedStrings()
+mod.statTypes = "normal,heroic,mythic"
 
-mod:SetRevision("20220518110528")
+mod:SetRevision("20220712224953KSA")
 mod:SetCreatureID(17881)
 
 mod:SetModelID(20510)

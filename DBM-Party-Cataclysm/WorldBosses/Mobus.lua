@@ -1,9 +1,9 @@
 local mod	= DBM:NewMod("Mobus", "DBM-Party-Cataclysm", 15)
 local L		= mod:GetLocalizedStrings()
 
-mod.statTypes = "normal,timewalker"
+mod.statTypes = "normal,heroic,mythic"
 
-mod:SetRevision("@file-date-integer@")
+mod:SetRevision("20220712225019KSA")
 mod:SetCreatureID(50009)
 mod:SetModelID(37338)
 mod:EnableWBEngageSync()--Enable syncing engage in outdoors

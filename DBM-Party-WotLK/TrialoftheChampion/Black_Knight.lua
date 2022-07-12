@@ -1,7 +1,8 @@
 local mod	= DBM:NewMod("BlackKnight", "DBM-Party-WotLK", 13)
 local L		= mod:GetLocalizedStrings()
+mod.statTypes = "normal,heroic,mythic"
 
-mod:SetRevision("20220518110528")
+mod:SetRevision("20220712225008KSA")
 mod:SetCreatureID(35451, 10000)		-- work around, DBM API failes to handle a Boss to die, rebirth, die again, rebirth again and die to loot...
 mod:SetUsedIcons(8)
 

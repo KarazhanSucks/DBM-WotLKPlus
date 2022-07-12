@@ -1,7 +1,8 @@
 local mod	= DBM:NewMod("AmnennartheColdbringer", "DBM-Party-Classic", 10)
 local L		= mod:GetLocalizedStrings()
+mod.statTypes = "normal,heroic,mythic"
 
-mod:SetRevision("20220518110528")
+mod:SetRevision("20220712224943KSA")
 mod:SetCreatureID(7358)
 
 mod:RegisterCombat("combat")

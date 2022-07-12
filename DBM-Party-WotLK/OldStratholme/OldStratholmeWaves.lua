@@ -1,7 +1,8 @@
 local mod	= DBM:NewMod("StratWaves", "DBM-Party-WotLK", 3)
 local L		= mod:GetLocalizedStrings()
+mod.statTypes = "normal,heroic,mythic"
 
-mod:SetRevision("20220518110528")
+mod:SetRevision("20220712225008KSA")
 
 mod:RegisterEvents(
 	"UPDATE_WORLD_STATES",

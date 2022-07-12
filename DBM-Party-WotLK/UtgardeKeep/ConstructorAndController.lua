@@ -1,7 +1,8 @@
 local mod	= DBM:NewMod("ConstructorAndController", "DBM-Party-WotLK", 10)
 local L		= mod:GetLocalizedStrings()
+mod.statTypes = "normal,heroic,mythic"
 
-mod:SetRevision("20220518110528")
+mod:SetRevision("20220712225008KSA")
 mod:SetCreatureID(24200, 24201)
 
 mod:RegisterCombat("combat", 24200, 24201)
