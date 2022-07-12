@@ -5,7 +5,7 @@ mod.statTypes = "normal,heroic,challenge,timewalker"
 
 mod:SetRevision("@file-date-integer@")
 mod:SetCreatureID(56747)--56747 (Gu Cloudstrike), 56754 (Azure Serpent)
-mod:SetEncounterID(1303)
+-- mod:SetEncounterID(1303)
 
 mod:RegisterCombat("combat")
 

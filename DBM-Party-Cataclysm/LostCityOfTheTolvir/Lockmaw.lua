@@ -5,7 +5,7 @@ mod.statTypes = "normal,heroic,timewalker"
 
 mod:SetRevision("@file-date-integer@")
 mod:SetCreatureID(43614)
---mod:SetEncounterID(1054)--Disabled because it's likely not correct since him and augh are split.
+-- --mod:SetEncounterID(1054)--Disabled because it's likely not correct since him and augh are split.
 
 mod:RegisterCombat("combat")
 

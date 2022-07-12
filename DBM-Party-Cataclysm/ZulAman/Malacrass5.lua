@@ -5,7 +5,7 @@ mod.statTypes = "heroic,timewalker"
 
 mod:SetRevision("@file-date-integer@")
 mod:SetCreatureID(24239)
-mod:SetEncounterID(1193)
+-- mod:SetEncounterID(1193)
 
 mod:RegisterCombat("combat")
 mod:SetMinCombatTime(30)	-- Prevent pre-maturely combat-end in cases where none targets the boss?

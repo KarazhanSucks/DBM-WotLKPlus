@@ -5,7 +5,7 @@ mod.statTypes = "normal,heroic,challenge,timewalker"
 
 mod:SetRevision("@file-date-integer@")
 mod:SetCreatureID(61442, 61444, 61445)--61442 (Kuai the Brute), 61453 (Mu'Shiba, Kuai's Add), 61444 (Ming the Cunning), 61445 (Haiyan the Unstoppable)
-mod:SetEncounterID(1442)
+-- mod:SetEncounterID(1442)
 
 --http://www.wowpedia.org/Clan_Leaders_of_the_Mogu
 mod:RegisterCombat("yell", L.Pull, L.Kuai, L.Ming, L.Haiyan) -- Common pull not fires if you've wiped. Other trigger is backup.

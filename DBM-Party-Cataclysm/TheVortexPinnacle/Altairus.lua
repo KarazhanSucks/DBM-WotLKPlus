@@ -5,7 +5,7 @@ mod.statTypes = "normal,heroic,timewalker"
 
 mod:SetRevision("@file-date-integer@")
 mod:SetCreatureID(43873)
-mod:SetEncounterID(1041)
+-- mod:SetEncounterID(1041)
 mod:SetUsedIcons(8)
 
 mod:RegisterCombat("combat")
