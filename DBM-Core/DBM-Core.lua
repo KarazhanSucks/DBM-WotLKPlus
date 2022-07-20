@@ -5721,6 +5721,8 @@ function DBM:GetCurrentInstanceDifficulty()
 			else
 				return "heroic5", difficultyName.." - ", difficulty, maxPlayers
 			end
+		elseif difficulty == 3 then
+			return "mythic", difficultyName.." - ", 3, maxPlayers
 		end
 	end
 end
