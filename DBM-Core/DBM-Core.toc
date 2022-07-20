@@ -16,7 +16,7 @@
 ## DefaultState: enabled
 ## Author: Barsoom, Bunny67, Zidras, KS, DBM-Frostmourne contributors, original DBM team
 ## Version: 9.2.21_alpha
-## X-Website: https://github.com/Zidras/DBM-Warmane/
+## X-Website: https://github.com/KarazhanSucks/DBM-WotLKPlus/
 
 compat.lua
 
