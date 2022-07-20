@@ -79,8 +79,8 @@ local function currentFullDate()
 end
 
 DBM = {
-	Revision = parseCurseDate("20220720214417"),
-	DisplayVersion = "9.2.21 alpha", -- the string that is shown as version
+	Revision = parseCurseDate("20220720221202"),
+	DisplayVersion = "9.2.22 alpha", -- the string that is shown as version
 	ReleaseRevision = releaseDate(2022 ,07 ,20) -- the date of the latest stable version that is available, optionally pass hours, minutes, and seconds for multiple releases in one day
 }
 
@@ -5721,8 +5721,6 @@ function DBM:GetCurrentInstanceDifficulty()
 			else
 				return "heroic5", difficultyName.." - ", difficulty, maxPlayers
 			end
-		elseif difficulty == 3 then
-			return "mythic", difficultyName.." - ", 3, maxPlayers
 		end
 	end
 end
@@ -5764,15 +5762,15 @@ end
 
 function DBM:HasMapRestrictions()
 	local playerX, playerY = GetPlayerMapPosition("player")
-	if playerX == 0 or playerY == 0 then -- attempt to fix zone once
-		SetMapToCurrentZone() -- DO NOT RUN THIS FUNCTION IN A LOOP! It's a waste of cpu power and will tank FPS due to radar loop scan.
-		playerX, playerY = GetPlayerMapPosition("player")
-	end
+	-- if playerX == 0 or playerY == 0 then -- attempt to fix zone once. Disabled for now to confirm LK 2.5 FPS issues.
+	-- 	SetMapToCurrentZone() -- DO NOT RUN THIS FUNCTION IN A LOOP! It's a waste of cpu power and will tank FPS due to radar loop scan.
+	-- 	playerX, playerY = GetPlayerMapPosition("player")
+	-- end
 	local mapName = GetMapInfo()
 	local level = GetCurrentMapDungeonLevel()
 	local usesTerrainMap = DungeonUsesTerrainMap()
 	level = usesTerrainMap and level - 1 or level
-	if (playerX == 0 or playerY == 0) or (self.MapSizes[mapName] and not self.MapSizes[mapName][level]) then
+	if (playerX == 0 and playerY == 0) or (self.MapSizes[mapName] and not self.MapSizes[mapName][level]) then
 		return true
 	end
 	return false
@@ -8888,7 +8886,7 @@ do
 			--Now, check if all special warning filters are enabled to save cpu and abort immediately if true.
 			if DBM.Options.DontPlaySpecialWarningSound and DBM.Options.DontShowSpecialWarningFlash and DBM.Options.DontShowSpecialWarningText then return end
 			--Next, we check if trash mod warning and if so check the filter trash warning filter for trivial difficulties
-			if self.mod:IsEasyDungeon() and self.mod.isTrashMod and DBM.Options.FilterTrashWarnings2 then return end
+			if self.mod.isTrashMod and DBM.Options.FilterTrashWarnings2 and (self.mod:IsEasyDungeon() or DBM:IsTrivial()) then return end
 			--We also check if person has the role filter turned on (typical for highest end raiders who don't want as much handholding from DBM)
 			if specTypeFilterTable[self.announceType] then
 				if DBM.Options["SpamSpecRole"..specTypeFilterTable[self.announceType]] then return end
@@ -9914,9 +9912,18 @@ do
 		end
 	end
 
+	--In past boss mods have always had to manually call Stop just to restart a timer, to avoid triggering false debug messages
+	--This function should simplify boss mod creation by allowing you to "Restart" a timer with one call in mod instead of 2
+	function timerPrototype:Restart(timer, ...)
+		self:Stop(...)
+		self:Unschedule(...)--Also unschedules not yet started timers that used timer:Schedule()
+		self:Start(timer, ...)
+	end
+	timerPrototype.Reboot = timerPrototype.Restart
+
 	function timerPrototype:Cancel(...)
 		self:Stop(...)
-		self:Unschedule(...)
+		self:Unschedule(...)--Also unschedules not yet started timers that used timer:Schedule()
 	end
 
 	function timerPrototype:GetTime(...)
