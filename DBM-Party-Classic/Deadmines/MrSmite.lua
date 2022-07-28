@@ -16,7 +16,7 @@ local warningSmiteSlam		= mod:NewTargetNoFilterAnnounce(6435, 2)
 local warningNimbleReflexes	= mod:NewTargetNoFilterAnnounce(6264, 2)
 
 local timerSmiteStomp		= mod:NewBuffFadesTimer(10, 6432, nil, nil, nil, 2)
-local timerSmiteSlam		= mod:NewSpellAnnounce(6435, 3)
+local timerSmiteSlam		= mod:NewAITimer(180, 6435, nil, nil, nil, 5, nil, DBM_COMMON_L.TANK_ICON)
 local timerTrashCD			= mod:NewAITimer(180, 3391, nil, nil, nil, 5, nil, DBM_COMMON_L.TANK_ICON)
 
 function mod:SPELL_CAST_SUCCESS(args)
