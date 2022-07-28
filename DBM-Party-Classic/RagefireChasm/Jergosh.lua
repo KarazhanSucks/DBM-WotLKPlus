@@ -2,13 +2,14 @@ local mod	= DBM:NewMod("Jergosh", "DBM-Party-Classic", 9)
 local L		= mod:GetLocalizedStrings()
 mod.statTypes = "normal,heroic,mythic"
 
-mod:SetRevision("20220712224943KSA")
+mod:SetRevision("20220728145200")
 mod:SetCreatureID(11518)
 
 mod:RegisterCombat("combat")
 
 mod:RegisterEventsInCombat(
 	"SPELL_CAST_SUCCESS 6304 20800",
+	"SPELL_CAST_START 6304 20800",
 	"SPELL_AURA_APPLIED 6304 20800"
 )
 
@@ -26,8 +27,8 @@ end
 function mod:SPELL_CAST_SUCCESS(args)
 	if args.spellId == 18267 and args:IsSrcTypeHostile() then
 		timerCurseofWeaknessCD:Start()
-	elseif args.spellId == 20800 and args:IsSrcTypeHostile() then
-		timerImmolateCD:Start()
+	-- elseif args.spellId == 20800 and args:IsSrcTypeHostile() then
+	-- 	timerImmolateCD:Start()
 	end
 end
 
@@ -36,5 +37,11 @@ function mod:SPELL_AURA_APPLIED(args)
 		warningCurseofWeakness:Show(args.destName)
 	elseif args.spellId == 20800 and args:IsDestTypePlayer() then
 		warningImmolate:Show(args.destName)
+	end
+end
+
+function mod:SPELL_CAST_START(args)
+	if args.spellId == 20800 and args:IsSrcTypeHostile() then
+		timerImmolateCD:Start()
 	end
 end
