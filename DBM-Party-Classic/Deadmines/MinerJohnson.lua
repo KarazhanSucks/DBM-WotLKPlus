@@ -2,7 +2,7 @@ local mod	= DBM:NewMod("MinerJohnson", "DBM-Party-Classic", 5)
 local L		= mod:GetLocalizedStrings()
 mod.statTypes = "normal,heroic,mythic"
 
-mod:SetRevision("20220712224943KSA")
+mod:SetRevision("20220728143000")
 mod:SetCreatureID(3586)
 
 mod:RegisterCombat("combat")
