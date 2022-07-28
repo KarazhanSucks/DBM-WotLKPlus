@@ -25,6 +25,7 @@ local timerCleaveCD			= mod:NewAITimer(180, 40505, nil, nil, nil, 5, nil, DBM_CO
 
 function mod:OnCombatStart(delay)
 	timerPoisonedHarpoonCD:Start(1-delay)
+	timerCleaveCD:Start(1-delay)
 end
 
 function mod:SPELL_CAST_SUCCESS(args)
