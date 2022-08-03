@@ -79,9 +79,9 @@ local function currentFullDate()
 end
 
 DBM = {
-	Revision = parseCurseDate("20220720221202"),
+	Revision = parseCurseDate("20220803142042"),
 	DisplayVersion = "9.2.22 alpha", -- the string that is shown as version
-	ReleaseRevision = releaseDate(2022 ,07 ,20) -- the date of the latest stable version that is available, optionally pass hours, minutes, and seconds for multiple releases in one day
+	ReleaseRevision = releaseDate(2022 ,08 ,03) -- the date of the latest stable version that is available, optionally pass hours, minutes, and seconds for multiple releases in one day
 }
 
 local fakeBWVersion = 7558
@@ -4592,7 +4592,7 @@ do
 			delayedFunction = nil
 		end
 		if watchFrameRestore then
-			WatchFrame_Expand(WatchFrame)
+			WatchFrame:Show()
 			watchFrameRestore = false
 		end
 		if DBM.Options.FixCLEUOnCombatStart then
@@ -5002,10 +5002,7 @@ do
 			end
 			if self.Options.HideObjectivesFrame and GetNumTrackedAchievements() == 0 then -- doesn't need InCombatLockdown() check since it's not a protected function
 				if WatchFrame:IsVisible() then
-					WatchFrame_Collapse(WatchFrame)
-					self:Schedule(0.05, function() -- repeating the function with a delay because of a bug in the game where the WatchFrame only gets pushed to the side and doesn't collapse.
-						WatchFrame_Collapse(WatchFrame)
-					end)
+					WatchFrame:Hide()
 					watchFrameRestore = true
 				end
 			end
@@ -5377,7 +5374,7 @@ do
 				self.Arrow:Hide(true)
 				-- doesn't need InCombatLockdown() check since it's not a protected function
 				if watchFrameRestore then
-					WatchFrame_Expand(WatchFrame)
+					WatchFrame:Show()
 					watchFrameRestore = false
 				end
 			if tooltipsHidden then
@@ -9715,11 +9712,13 @@ do
 					end
 				end
 			end
-			local colorId = 0
+			local colorId
 			if self.option then
 				colorId = self.mod.Options[self.option .. "TColor"]
 			elseif self.colorType and type(self.colorType) == "string" then--No option for specific timer, but another bool option given that tells us where to look for TColor
-				colorId = self.mod.Options[self.colorType .. "TColor"] or 0
+				colorId = self.mod.Options[self.colorType .. "TColor"]
+			else--No option, or secondary option, set colorId to hardcoded color type
+				colorId = self.colorType
 			end
 			local countVoice, countVoiceMax = 0, self.countdownMax or 4
 			if self.option then
