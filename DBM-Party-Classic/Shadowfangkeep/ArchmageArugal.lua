@@ -42,7 +42,6 @@ end
 function mod:SPELL_AURA_APPLIED(args)
 	if args.spellId == 7621 then
 		warningArugalsCurse:Show(args.destName)
-	end
 	elseif args.spellId == 7803 then
 		warningThundershock:Show(args.destName)
 	end
