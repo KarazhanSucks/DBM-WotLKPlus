@@ -22,7 +22,8 @@ Raids will be added once the server progresses upto that point.
 If coming from old DBM install (e.g. 5.40) all DBM config files should be deleted in the /WTF/Account directories or there will be errors.
 
 ## Removal of old DBM addon files
-It's better to do a clean install of this addon into the /Interface/Addons directory. (Thus removing all other DBM folders prior to installing this new one.)
+It's better to do a clean install of this addon into the /Interface/Addons directory.
+(Thus removing all other DBM folders prior to installing this new one.)
 
 ## Installation of Trimitor's map file Patch
 Trimitor's (Discord: Trimitor#3873) patch has to be loaded last to be usable on the BlueRing client, therefore it has been renamed to Patch-Z.
