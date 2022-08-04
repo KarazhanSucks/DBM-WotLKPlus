@@ -16,16 +16,24 @@ mod:RegisterEventsInCombat(
 local warningDruidSlumber			= mod:NewTargetNoFilterAnnounce(8040, 2)
 local warningHealingTouch			= mod:NewCastAnnounce(23381, 2)
 local warningPoison					= mod:NewTargetNoFilterAnnounce(17330, 2, nil, "RemovePoison")
+local warningFanglordLightningBolt	= mod:NewTargetNoFilterAnnounce(102, 2)
+local warningLightningBolt			= mod:NewTargetNoFilterAnnounce(9532, 2)
 
 local specWarnDruidsSlumber			= mod:NewSpecialWarningInterrupt(8040, "HasInterrupt", nil, nil, 1, 2)
+local specWarnFanglordLightningBolt	= mod:NewSpecialWarningInterrupt(102, "HasInterrupt", nil, nil, 1, 2)
+local specWarnLightningBolt			= mod:NewSpecialWarningInterrupt(9532, "HasInterrupt", nil, nil, 1, 2)
 
 local timerDruidsSlumberCD			= mod:NewAITimer(180, 8040, nil, nil, nil, 4, nil, DBM_COMMON_L.INTERRUPT_ICON..DBM_COMMON_L.MAGIC_ICON)
 local timerHealingTouchCD			= mod:NewAITimer(180, 23381, nil, nil, nil, 4, nil, DBM_COMMON_L.INTERRUPT_ICON)
 local timerPoisonCD					= mod:NewAITimer(180, 23381, nil, "RemovePoison", nil, 5, nil, DBM_COMMON_L.POISON_ICON)
+local timerFanglordLightningBoltCD	= mod:NewAITimer(180, 102, nil, nil, nil, 4, nil, DBM_COMMON_L.INTERRUPT_ICON)
+local timerLightningBoltCD			= mod:NewAITimer(180, 9532, nil, nil, nil, 4, nil, DBM_COMMON_L.INTERRUPT_ICON)
 
 function mod:OnCombatStart(delay)
 	timerDruidsSlumberCD:Start(1-delay)
 	timerHealingTouchCD:Start(1-delay)
+	timerFanglordLightningBoltCD:Start(1-delay)
+	timerLightningBoltCD:Start(1-delay)
 end
 
 function mod:SPELL_CAST_START(args)
@@ -37,6 +45,18 @@ function mod:SPELL_CAST_START(args)
 	elseif args.spellId == 23381 and args:IsSrcTypeHostile() then
 		warningHealingTouch:Show()
 		timerHealingTouchCD:Start()
+	elseif args.spellId == 102 and args:IsSrcTypeHostile() then
+		if self:CheckInterruptFilter(args.sourceGUID, false, true) then
+			warningFanglordLightningBolt:Show(args.sourceName)
+			timerFanglordLightningBolthCD:Start()
+			specWarnFanglordLightningBolt:Play("kickcast")
+		end
+	elseif args.spellId == 9532 and args:IsSrcTypeHostile() then
+		if self:CheckInterruptFilter(args.sourceGUID, false, true) then
+			warningLightningBolt:Show(args.sourceName)
+			timerLightningBoltCD:Start()
+			specWarnLightningBolt:Play("kickcast")
+		end
 	end
 end
 
