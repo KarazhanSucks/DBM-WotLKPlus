@@ -2,13 +2,13 @@ local mod	= DBM:NewMod(475, "DBM-Party-Classic", 19, 240)
 local L		= mod:GetLocalizedStrings()
 mod.statTypes = "normal,heroic,mythic"
 
-mod:SetRevision("20220712224943KSA")
+mod:SetRevision("20220804133900")
 mod:SetCreatureID(3669)
 
 mod:RegisterCombat("combat")
 
 mod:RegisterEventsInCombat(
-	"SPELL_CAST_START 8040 23381",
+	"SPELL_CAST_START 8040 23381 102 9532",
 	"SPELL_CAST_SUCCESS 7965",
 	"SPELL_AURA_APPLIED 8040 17330"
 )
@@ -16,8 +16,8 @@ mod:RegisterEventsInCombat(
 local warningDruidSlumber			= mod:NewTargetNoFilterAnnounce(8040, 2)
 local warningHealingTouch			= mod:NewCastAnnounce(23381, 2)
 local warningPoison					= mod:NewTargetNoFilterAnnounce(17330, 2, nil, "RemovePoison")
-local warningFanglordLightningBolt	= mod:NewTargetNoFilterAnnounce(102, 2)
-local warningLightningBolt			= mod:NewTargetNoFilterAnnounce(9532, 2)
+local warningFanglordLightningBolt	= mod:NewCastAnnounce(102, 2)
+local warningLightningBolt			= mod:NewCastAnnounce(9532, 2)
 
 local specWarnDruidsSlumber			= mod:NewSpecialWarningInterrupt(8040, "HasInterrupt", nil, nil, 1, 2)
 local specWarnFanglordLightningBolt	= mod:NewSpecialWarningInterrupt(102, "HasInterrupt", nil, nil, 1, 2)
@@ -25,7 +25,7 @@ local specWarnLightningBolt			= mod:NewSpecialWarningInterrupt(9532, "HasInterru
 
 local timerDruidsSlumberCD			= mod:NewAITimer(180, 8040, nil, nil, nil, 4, nil, DBM_COMMON_L.INTERRUPT_ICON..DBM_COMMON_L.MAGIC_ICON)
 local timerHealingTouchCD			= mod:NewAITimer(180, 23381, nil, nil, nil, 4, nil, DBM_COMMON_L.INTERRUPT_ICON)
-local timerPoisonCD					= mod:NewAITimer(180, 23381, nil, "RemovePoison", nil, 5, nil, DBM_COMMON_L.POISON_ICON)
+local timerPoisonCD					= mod:NewAITimer(180, 17330, nil, "RemovePoison", nil, 5, nil, DBM_COMMON_L.POISON_ICON)
 local timerFanglordLightningBoltCD	= mod:NewAITimer(180, 102, nil, nil, nil, 4, nil, DBM_COMMON_L.INTERRUPT_ICON)
 local timerLightningBoltCD			= mod:NewAITimer(180, 9532, nil, nil, nil, 4, nil, DBM_COMMON_L.INTERRUPT_ICON)
 

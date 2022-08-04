@@ -14,8 +14,8 @@ mod:RegisterEventsInCombat(
 
 local warningDruidSlumber			= mod:NewTargetNoFilterAnnounce(8040, 2)
 local warningHealingTouch			= mod:NewCastAnnounce(23381, 2)
-local warningLightningBolt			= mod:NewTargetNoFilterAnnounce(9532, 2)
-local warningHealingTouch			= mod:NewCastAnnounce(23381, 2)
+local warningFanglordLightningBolt	= mod:NewCastAnnounce(102, 2)
+local warningLightningBolt			= mod:NewCastAnnounce(9532, 2)
 
 local specWarnDruidsSlumber			= mod:NewSpecialWarningInterrupt(8040, "HasInterrupt", nil, nil, 1, 2)
 local specWarnFanglordLightningBolt	= mod:NewSpecialWarningInterrupt(102, "HasInterrupt", nil, nil, 1, 2)
