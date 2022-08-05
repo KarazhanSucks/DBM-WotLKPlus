@@ -12,7 +12,7 @@ mod:RegisterEventsInCombat(
 )
 
 
-local warningCleave	= mod:NewTargetNoFilterAnnounce(40505, 2)
+local warningCleave	= mod:NewCastAnnounce(40505, 2)
 
 local timerCleave		= mod:NewAITimer(180, 40505, nil, nil, nil, 5, nil, DBM_COMMON_L.TANK_ICON)
 
