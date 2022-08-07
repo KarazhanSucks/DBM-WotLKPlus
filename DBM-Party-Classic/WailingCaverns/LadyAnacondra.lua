@@ -46,7 +46,7 @@ function mod:SPELL_CAST_START(args)
 	elseif args.spellId == 102 and args:IsSrcTypeHostile() then
 		if self:CheckInterruptFilter(args.sourceGUID, false, true) then
 			warningFanglordLightningBolt:Show(args.sourceName)
-			timerFanglordLightningBolthCD:Start()
+			timerFanglordLightningBoltCD:Start()
 			specWarnFanglordLightningBolt:Play("kickcast")
 		end
 	elseif args.spellId == 9532 and args:IsSrcTypeHostile() then
