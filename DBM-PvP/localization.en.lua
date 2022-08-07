@@ -227,6 +227,24 @@ L:SetGeneralLocalization({
 	name = "Isle of Conquest"
 })
 
+------------------------
+--  Battle for Gilneas  --
+------------------------
+L = DBM:GetModLocalization("z761")
+
+L:SetGeneralLocalization({
+	name = "Battle for Gilneas"
+})
+
+------------------------
+--  Twin Peaks  --
+------------------------
+L = DBM:GetModLocalization("z726")
+
+L:SetGeneralLocalization({
+	name = "Twin Peaks"
+})
+
 L:SetWarningLocalization({
 	WarnSiegeEngine		= "Siege Engine ready!",
 	WarnSiegeEngineSoon	= "Siege Engine in ~10 sec"

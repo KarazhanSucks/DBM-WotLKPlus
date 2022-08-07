@@ -56,3 +56,5 @@ Battlegrounds\EyeOfTheStorm.lua
 Battlegrounds\IsleOfConquest.lua
 Battlegrounds\StrandOfTheAncients.lua
 Battlegrounds\Warsong.lua
+Battlegrounds\Gilneas.lua
+Battlegrounds\TwinPeaks.lua
