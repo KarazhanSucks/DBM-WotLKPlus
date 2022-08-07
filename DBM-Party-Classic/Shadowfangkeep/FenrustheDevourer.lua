@@ -2,7 +2,7 @@ local mod	= DBM:NewMod("FenrustheDevourer", "DBM-Party-Classic", 14)
 local L		= mod:GetLocalizedStrings()
 mod.statTypes = "normal,heroic,mythic"
 
-mod:SetRevision("20220712224943KSA")
+mod:SetRevision("20220712224943")
 mod:SetCreatureID(4274)
 
 mod:RegisterCombat("combat")
