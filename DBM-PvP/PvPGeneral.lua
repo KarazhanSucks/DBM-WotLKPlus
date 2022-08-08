@@ -758,6 +758,12 @@ do
 
 	local winTimer = mod:NewTimer(30, "TimerWin", GetBattlefieldFaction("player") == "Alliance" and "Interface\\Icons\\INV_BannerPVP_02" or "Interface\\Icons\\INV_BannerPVP_01")
 	local resourcesPerSec = {
+		[3] = { -- Gilneas
+			[0] = 1e-300,
+			[1] = 0.5,
+			[2] = 1,
+			[3] = 2,
+		},
 		[4] = { -- Eye of the Storm
 			[0] = 1e-300,
 			[1] = 0.5,

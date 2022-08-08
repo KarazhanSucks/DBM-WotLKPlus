@@ -9,7 +9,6 @@ mod:SetZone(DBM_DISABLE_ZONE_DETECTION)
 mod:RemoveOption("HealthFrame")
 
 mod:RegisterEvents(
-	"LOADING_SCREEN_DISABLED",
 	"ZONE_CHANGED_NEW_AREA"
 )
 
@@ -26,10 +25,9 @@ do
 		end
 	end
 
-	function mod:LOADING_SCREEN_DISABLED()
-		self:Schedule(1, Init)
+	function mod:ZONE_CHANGED_NEW_AREA()
+		Init()
 	end
-	mod.ZONE_CHANGED_NEW_AREA	= mod.LOADING_SCREEN_DISABLED
-	mod.PLAYER_ENTERING_WORLD	= mod.LOADING_SCREEN_DISABLED
-	mod.OnInitialize			= mod.LOADING_SCREEN_DISABLED
+	mod.PLAYER_ENTERING_WORLD	= mod.ZONE_CHANGED_NEW_AREA
+	mod.OnInitialize			= mod.ZONE_CHANGED_NEW_AREA
 end
