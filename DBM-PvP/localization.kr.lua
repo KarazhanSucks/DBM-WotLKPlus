@@ -152,6 +152,25 @@ L:SetGeneralLocalization({
 	name = "고대의 해안"
 })
 
+
+------------------------
+--  Battle for Gilneas  --
+------------------------
+L = DBM:GetModLocalization("z761")
+
+L:SetGeneralLocalization({
+	name = "Battle for Gilneas"
+})
+
+------------------------
+--  Twin Peaks  --
+------------------------
+L = DBM:GetModLocalization("z726")
+
+L:SetGeneralLocalization({
+	name = "Twin Peaks"
+})
+
 ------------------------
 --  Isle of Conquest  --
 ------------------------
