@@ -1,11 +1,11 @@
 local mod	= DBM:NewMod(174, "DBM-BlackwingDescent", nil, 73)
 local L		= mod:GetLocalizedStrings()
-local Nefarian	= DBM:EJ_GetSectionInfo(3279)
-local Onyxia	= DBM:EJ_GetSectionInfo(3283)
+--local Nefarian	= DBM:EJ_GetSectionInfo(3279)
+--local Onyxia	= DBM:EJ_GetSectionInfo(3283)
 
 mod:SetRevision("@file-date-integer@")
 mod:SetCreatureID(41376, 41270)
-mod:SetEncounterID(1026) -- ES fires when Nefarian engaged.
+-- mod:SetEncounterID(1026) -- ES fires when Nefarian engaged.
 --mod:SetModelSound("Sound\\Creature\\Nefarian\\VO_BD_Nefarian_Event09.ogg", "Sound\\Creature\\Nefarian\\VO_BD_Nefarian_Event13.ogg")
 --"Ha ha ha ha ha! The heroes have made it to the glorious finale. I take it you are in good spirits? Prepared for the final battle? Then gaze now upon my ultimate creation! RISE, SISTER!" = "Nefarian\\VO_BD_Nefarian_Event01",
 --Long: I have tried to be an accommodating host, but you simply will not die! Time to throw all pretense aside and just... KILL YOU ALL!.
@@ -21,8 +21,8 @@ mod:RegisterEventsInCombat(
 	"SPELL_CAST_SUCCESS",
 	"SPELL_DAMAGE 81007",
 	"SPELL_MISSED 81007",
-	"CHAT_MSG_MONSTER_YELL",
-	"RAID_BOSS_EMOTE"
+	"CHAT_MSG_MONSTER_YELL"--,
+	--"RAID_BOSS_EMOTE"
 )
 
 local warnOnyTailSwipe			= mod:NewAnnounce("OnyTailSwipe", 3, 77827)--we only care about onyxia's tailswipe. Nefarian's shouldn't get in the way or you're doing it wrong.
@@ -76,7 +76,7 @@ local dominionTargets = {}
 local lastBlaze = 0--Do NOT use prototype for this, it's updated in a special way using different triggers then when method is called.
 local CVAR = false
 local shadowBlazeSynced = false
-local Charge = DBM:EJ_GetSectionInfo(3284)
+--local Charge = DBM:EJ_GetSectionInfo(3284)
 
 --Credits to Caleb for original concept, modified with yell sync and timer tweaks.
 function mod:ShadowBlazeFunction()

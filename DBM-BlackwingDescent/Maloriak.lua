@@ -3,7 +3,7 @@ local L		= mod:GetLocalizedStrings()
 
 mod:SetRevision("@file-date-integer@")
 mod:SetCreatureID(41378)
-mod:SetEncounterID(1025)
+-- mod:SetEncounterID(1025)
 mod:SetUsedIcons(1, 2, 3, 4, 6, 7, 8)
 --mod:SetModelSound("Sound\\Creature\\Nefarian\\VO_BD_Nefarian_MaloriakIntro01.ogg", "Sound\\Creature\\Maloriak\\VO_BD_Maloriak_Event05.ogg")
 --Long: Maloriak, try not to lose to these mortals. Semicompetent help is SO hard to create.
@@ -17,13 +17,13 @@ mod:RegisterEventsInCombat(
 	"SPELL_CAST_START",
 	"SPELL_CAST_SUCCESS",
 	"SPELL_INTERRUPT",
-	"RAID_BOSS_EMOTE",
-	"UNIT_HEALTH boss1"
+	--"RAID_BOSS_EMOTE",
+	"UNIT_HEALTH"
 )
 
 local warnPhase					= mod:NewAnnounce("WarnPhase", 2)
 local warnReleaseAdds			= mod:NewSpellAnnounce(77569, 3)
-local warnRemainingAdds			= mod:NewAddsLeftAnnounce("ej2932", 2, 77569)
+--local warnRemainingAdds			= mod:NewAddsLeftAnnounce("ej2932", 2, 77569)
 local warnFlashFreeze			= mod:NewTargetAnnounce(77699, 4)
 local warnBitingChill			= mod:NewTargetAnnounce(77760, 3)
 local warnRemedy				= mod:NewSpellAnnounce(77912, 3)
@@ -73,10 +73,10 @@ local bitingChillIcon = 6
 local flashFreezeIcon = 8
 local prewarnedPhase2 = false
 local CVAR = false
-local Red = DBM:EJ_GetSectionInfo(2935)
-local Green = DBM:EJ_GetSectionInfo(2941)
-local Blue = DBM:EJ_GetSectionInfo(2938)
-local Dark = DBM:EJ_GetSectionInfo(2943)
+--local Red = DBM:EJ_GetSectionInfo(2935)
+--local Green = DBM:EJ_GetSectionInfo(2941)
+--local Blue = DBM:EJ_GetSectionInfo(2938)
+--local Dark = DBM:EJ_GetSectionInfo(2943)
 
 local function showBitingChillWarning()
 	warnBitingChill:Show(table.concat(bitingChillTargets, "<, >"))

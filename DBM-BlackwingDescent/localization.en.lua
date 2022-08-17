@@ -5,6 +5,10 @@ local L
 -------------------------------
 L = DBM:GetModLocalization(169)
 
+L:SetGeneralLocalization({
+	name		= "Dark Iron Golem Council"
+})
+
 L:SetWarningLocalization({
 	SpecWarnActivated			= "Change Target to %s!",
 	specWarnGenerator			= "Power Generator - Move %s!"
@@ -39,6 +43,10 @@ L:SetMiscLocalization({
 --------------
 L = DBM:GetModLocalization(170)
 
+L:SetGeneralLocalization({
+	name		= "Magmaw"
+})
+
 L:SetWarningLocalization({
 	SpecWarnInferno	= "Blazing Bone Construct Soon (~4s)"
 })
@@ -59,8 +67,12 @@ L:SetMiscLocalization({
 -----------------
 L = DBM:GetModLocalization(171)
 
+L:SetGeneralLocalization({
+	name		= "Atramedes"
+})
+
 L:SetOptionLocalization({
-	InfoFrame				= "Show info frame for $journal:3072",
+	--InfoFrame				= "Show info frame for $journal:3072",
 	TrackingIcon			= DBM_CORE_L.AUTO_ICONS_OPTION_TARGETS:format(78092)
 })
 
@@ -73,6 +85,10 @@ L:SetMiscLocalization({
 --  Chimaeron  --
 -----------------
 L = DBM:GetModLocalization(172)
+
+L:SetGeneralLocalization({
+	name		= "Chimaeron"
+})
 
 L:SetOptionLocalization({
 	RangeFrame		= "Show range frame (6)",
@@ -88,6 +104,10 @@ L:SetMiscLocalization({
 --  Maloriak  --
 ----------------
 L = DBM:GetModLocalization(173)
+
+L:SetGeneralLocalization({
+	name		= "Maloriak"
+})
 
 L:SetWarningLocalization({
 	WarnPhase			= "%s phase"
@@ -119,6 +139,10 @@ L:SetMiscLocalization({
 ----------------
 L = DBM:GetModLocalization(174)
 
+L:SetGeneralLocalization({
+	name		= "Nefarian"
+})
+
 L:SetWarningLocalization({
 	OnyTailSwipe			= "Tail Lash (Onyxia)",
 	NefTailSwipe			= "Tail Lash (Nefarian)",
@@ -149,7 +173,7 @@ L:SetOptionLocalization({
 	NefSwipeTimer			= "Show timer for Nefarian's $spell:77827 cooldown",
 	OnyBreathTimer			= "Show timer for Onyxia's $spell:77826 cooldown",
 	NefBreathTimer			= "Show timer for Nefarian's $spell:77826 cooldown",
-	InfoFrame				= "Show info frame for $journal:3284",
+	--InfoFrame				= "Show info frame for $journal:3284",
 	SetWater				= "Automatically disable water collision on pull<br/>(returns it to enabled upon leaving combat)",
 	SetIconOnCinder			= DBM_CORE_L.AUTO_ICONS_OPTION_TARGETS:format(79339),
 	RangeFrame				= "Show range frame (10) for $spell:79339<br/>(Shows everyone if you have debuff, only players with debuff if not)"
