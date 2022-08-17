@@ -152,7 +152,6 @@ L:SetGeneralLocalization({
 	name = "고대의 해안"
 })
 
-
 ------------------------
 --  Battle for Gilneas  --
 ------------------------

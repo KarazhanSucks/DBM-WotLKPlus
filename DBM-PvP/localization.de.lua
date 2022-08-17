@@ -182,7 +182,6 @@ L:SetGeneralLocalization({
 	name = "Strand der Uralten"
 })
 
-
 ------------------------
 --  Battle for Gilneas  --
 ------------------------

@@ -167,7 +167,6 @@ L:SetGeneralLocalization({
 	name = "Берег Древних"
 })
 
-
 ------------------------
 --  Battle for Gilneas  --
 ------------------------

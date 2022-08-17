@@ -152,7 +152,6 @@ L:SetGeneralLocalization({
 	name = "Playa de los Ancestros"
 })
 
-
 ------------------------
 --  Battle for Gilneas  --
 ------------------------

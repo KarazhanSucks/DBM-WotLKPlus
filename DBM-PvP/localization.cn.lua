@@ -155,7 +155,6 @@ L:SetGeneralLocalization({
 	name = "远古海滩"
 })
 
-
 ------------------------
 --  Battle for Gilneas  --
 ------------------------

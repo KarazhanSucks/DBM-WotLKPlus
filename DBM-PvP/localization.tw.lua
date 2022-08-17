@@ -153,7 +153,6 @@ L:SetGeneralLocalization({
 	name = "遠祖灘頭"
 })
 
-
 ------------------------
 --  Battle for Gilneas  --
 ------------------------

@@ -153,7 +153,6 @@ L:SetGeneralLocalization({
 	name = "Rivage des Anciens"
 })
 
-
 ------------------------
 --  Battle for Gilneas  --
 ------------------------
