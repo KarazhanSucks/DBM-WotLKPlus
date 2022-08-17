@@ -759,6 +759,38 @@ L:SetGeneralLocalization({
 	name		= "Bazzalan"
 })
 
+--  Adarogg  --
+-----------------------------
+L = DBM:GetModLocalization(694)
+
+L:SetGeneralLocalization{
+	name 		= "Adarogg"
+}
+-----------------------------
+--  Dark Shaman Koranthal  --
+-----------------------------
+L = DBM:GetModLocalization(695)
+
+L:SetGeneralLocalization{
+	name 		= "Dark Shaman Koranthal"
+}
+-----------------------------
+--  Slagmaw  --
+-----------------------------
+L = DBM:GetModLocalization(696)
+
+L:SetGeneralLocalization{
+	name 		= "Slagmaw"
+}
+-----------------------------
+--  Lava Guard Gordoth  --
+-----------------------------
+L = DBM:GetModLocalization(697)
+
+L:SetGeneralLocalization{
+	name 		= "Lava Guard Gordoth"
+}
+
 -------------------------
 --  Razorfen Downs -233J/129M (8L/10C)  --
 -----------------------------
@@ -1211,6 +1243,31 @@ L = DBM:GetModLocalization("BruegalIronknuckle")
 L:SetGeneralLocalization({
 	name		= "Bruegal Ironknuckle"
 })
+
+-----------------------------
+--  Hogger  --
+-----------------------------
+L = DBM:GetModLocalization(464)
+
+L:SetGeneralLocalization{
+	name 		= "Hogger"
+}
+-----------------------------
+--  Lord Overheat  --
+-----------------------------
+L = DBM:GetModLocalization(465)
+
+L:SetGeneralLocalization{
+	name 		= "Lord Overheat"
+}
+-----------------------------
+--  Randolph Moloch  --
+-----------------------------
+L = DBM:GetModLocalization(466)
+
+L:SetGeneralLocalization{
+	name 		= "Randolph Moloch"
+}
 
 -------------------------
 --  Stratholme 236J/329M (10L/16C)  --

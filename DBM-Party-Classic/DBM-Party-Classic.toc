@@ -143,6 +143,10 @@ RagefireChasm\Oggleflint.lua
 RagefireChasm\Taragaman.lua
 RagefireChasm\Jergosh.lua
 RagefireChasm\Bazzalan.lua
+RagefireChasm\Adarogg.lua
+RagefireChasm\Koranthal.lua
+RagefireChasm\Slagmaw.lua
+RagefireChasm\Gordoth.lua
 
 RazorfenDowns\Tutenkash.lua
 RazorfenDowns\MordreshFireEye.lua
@@ -198,6 +202,9 @@ StormwindStockaid\Hamhock.lua
 StormwindStockaid\BazilThredd.lua
 StormwindStockaid\DextrenWard.lua
 StormwindStockaid\BruegalIronknuckle.lua
+StormwindStockaid\Hogger.lua
+StormwindStockaid\LordOverheat.lua
+StormwindStockaid\Moloch.lua
 
 Stratholme\HearthsingerForresten.lua
 Stratholme\TimmytheCruel.lua
