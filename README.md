@@ -27,6 +27,7 @@ It's better to do a clean install of this addon into the /Interface/Addons direc
 
 ## Installation of Trimitor's map file Patch
 **No longer required as of August 23rd 2022**
+
 ~~Trimitor's (Discord: Trimitor#3873) patch has to be loaded last to be usable on the BlueRing client, therefore it has been renamed to Patch-Z.~~
 
 ~~If there are any other patches you're using shift their letter up by one so that there aren't any duplicate patch-#.mpq files present.~~
