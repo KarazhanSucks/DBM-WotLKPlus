@@ -2,7 +2,7 @@ local mod	= DBM:NewMod("Oggleflint", "DBM-Party-Classic", 9)
 local L		= mod:GetLocalizedStrings()
 mod.statTypes = "normal,heroic,mythic"
 
-mod:SetRevision("20220728145700")
+mod:SetRevision("202200827220700")
 mod:SetCreatureID(11517)
 
 mod:RegisterCombat("combat")
@@ -12,9 +12,9 @@ mod:RegisterEventsInCombat(
 )
 
 
-local warningCleave	= mod:NewCastAnnounce(40505, 2)
+local warningCleave	= mod:NewSpellAnnounce(40505, 2)
 
-local timerCleave		= mod:NewAITimer(180, 40505, nil, nil, nil, 5, nil, DBM_COMMON_L.TANK_ICON)
+local timerCleave		= mod:NewAITimer(180, 40505, nil, nil, nil, 3)
 
 
 function mod:SPELL_CAST_SUCCESS(args)
