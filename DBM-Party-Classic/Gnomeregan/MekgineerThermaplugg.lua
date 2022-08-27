@@ -23,7 +23,7 @@ function mod:OnCombatStart(delay)
 	timerActivateBomb:Start(-delay)
 end
 
-function mod:SPELL_CAST_SUCESS(args)
+function mod:SPELL_CAST_SUCCESS(args)
 	if args:IsSpellID(10101, 11130) then
 		warningKnockAway:Show()
 		timerKnockAwayCD:Start()
