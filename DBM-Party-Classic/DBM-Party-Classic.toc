@@ -60,6 +60,12 @@ BlackfathomDeeps\Gelihast.lua
 BlackfathomDeeps\TwilightLordKelris.lua
 BlackfathomDeeps\OldSerrakis.lua
 BlackfathomDeeps\Akumai.lua
+BlackfathomDeeps\Bathiel.lua
+BlackfathomDeeps\Domina.lua
+BlackfathomDeeps\Gore.lua
+BlackfathomDeeps\Guardian.lua
+BlackfathomDeeps\Korul.lua
+BlackfathomDeeps\Thruk.lua
 
 BlackrockDepths\Gerstahn.lua
 BlackrockDepths\LordRoccor.lua

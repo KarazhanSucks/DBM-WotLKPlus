@@ -56,6 +56,59 @@ L:SetGeneralLocalization({
 	name		= "Aku'mai"
 })
 
+-----------------------------
+--  Bathiel  --
+-----------------------------
+L = DBM:GetModLocalization(437)
+
+L:SetGeneralLocalization({
+	name		= "Bathiel"
+})
+
+-----------------------------
+--  Domina --
+-----------------------------
+L = DBM:GetModLocalization(436)
+
+L:SetGeneralLocalization({
+	name		= "Domina"
+})
+
+-----------------------------
+--  Gore  --
+-----------------------------
+L = DBM:GetModLocalization(1144)
+
+L:SetGeneralLocalization({
+	name		= "Gore"
+})
+
+-----------------------------
+--  Guardian  --
+-----------------------------
+L = DBM:GetModLocalization(447)
+
+L:SetGeneralLocalization({
+	name		= "Guardian"
+})
+
+-----------------------------
+--  Korul --
+-----------------------------
+L = DBM:GetModLocalization(426)
+
+L:SetGeneralLocalization({
+	name		= "Korul"
+})
+-----------------------------
+--  Thruk  --
+-----------------------------
+L = DBM:GetModLocalization(1145)
+
+L:SetGeneralLocalization({
+	name		= "Thruk"
+})
+
 -------------------------
 --  Blackrock Depths-228J/230M (2)  --
 -----------------------------

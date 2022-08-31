@@ -4,7 +4,7 @@ mod.statTypes = "normal,heroic,mythic"
 
 mod:SetRevision("20220817202221")
 mod:SetCreatureID(61408)
--- mod:SetEncounterID(1443)
+-- -- mod:SetEncounterID(1443)
 
 mod:RegisterCombat("combat")
 
