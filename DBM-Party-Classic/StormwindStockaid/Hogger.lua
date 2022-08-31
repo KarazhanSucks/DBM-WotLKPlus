@@ -12,7 +12,7 @@ mod:RegisterEventsInCombat(
 	"SPELL_CAST_START 86620"
 )
 
-local warningSoul	= mod:NewTargetAnnounce(32346, 2)
+-- local warningSoul	= mod:NewTargetAnnounce(32346, 2)
 
 local specWarnMaddeningCall			= mod:NewSpecialWarningInterrupt(86620, "HasInterrupt", nil, nil, 1, 2)
 
@@ -32,8 +32,8 @@ function mod:SPELL_CAST_START(args)
 	end
 end
 
-function mod:SPELL_AURA_APPLIED(args)
-	if args.spellId == 32346 then
-		warningSoul:Show(args.destName)
-	end
-end
+-- function mod:SPELL_AURA_APPLIED(args)
+-- 	if args.spellId == 32346 then
+-- 		warningSoul:Show(args.destName)
+-- 	end
+-- end
