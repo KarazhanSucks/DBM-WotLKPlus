@@ -4,7 +4,7 @@ mod.statTypes = "normal,heroic,mythic"
 
 mod:SetRevision("20220807105505")
 mod:SetCreatureID(39428, 99999)--Combat log shows him as dying when he borrows, wtf?
--- --mod:SetEncounterID(1076)--In case this has same bug as unit died with borrow
+-- -- --mod:SetEncounterID(1076)--In case this has same bug as unit died with borrow
 
 mod:RegisterCombat("combat")
 mod:RegisterKill("yell", L.Kill)
