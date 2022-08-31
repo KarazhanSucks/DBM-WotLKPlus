@@ -50,15 +50,27 @@ L= DBM:GetModLocalization(109)
 -------------
 L= DBM:GetModLocalization(89)
 
+L:SetGeneralLocalization({
+	name		= "Glubtok"
+})
+
 -----------------------
 -- Helix Gearbreaker --
 -----------------------
 L= DBM:GetModLocalization(90)
 
+L:SetGeneralLocalization({
+	name		= "Helix Gearbreaker"
+})
+
 ---------------------
 -- Foe Reaper 5000 --
 ---------------------
 L= DBM:GetModLocalization(91)
+
+L:SetGeneralLocalization({
+	name		= "Foe Reaper 5000"
+})
 
 L:SetOptionLocalization{
 	HarvestIcon		= DBM_CORE_L.AUTO_ICONS_OPTION_TARGETS:format(88495)
@@ -69,15 +81,27 @@ L:SetOptionLocalization{
 ----------------------
 L= DBM:GetModLocalization(92)
 
+L:SetGeneralLocalization({
+	name		= "Admiral Ripsnarl"
+})
+
 ----------------------
 -- "Captain" Cookie --
 ----------------------
 L= DBM:GetModLocalization(93)
 
+L:SetGeneralLocalization({
+	name		= '"Captain" Cookie'
+})
+
 ----------------------
 -- Vanessa VanCleef --
 ----------------------
 L= DBM:GetModLocalization(95)
+
+L:SetGeneralLocalization({
+	name		= "Vanessa VanCleef"
+})
 
 L:SetTimerLocalization({
 	achievementGauntlet	= "Gauntlet"
@@ -260,15 +284,27 @@ L:SetOptionLocalization{
 -------------------
 L= DBM:GetModLocalization(96)
 
+L:SetGeneralLocalization({
+	name		= "Baron Ashbury"
+})
+
 -----------------------
 -- Baron Silverlaine --
 -----------------------
 L= DBM:GetModLocalization(97)
 
+L:SetGeneralLocalization({
+	name		= "Baron Silverlaine"
+})
+
 --------------------------
 -- Commander Springvale --
 --------------------------
 L= DBM:GetModLocalization(98)
+
+L:SetGeneralLocalization({
+	name		= "Commander Springvale"
+})
 
 L:SetTimerLocalization({
 	TimerAdds		= "Next Adds"
@@ -287,6 +323,10 @@ L:SetMiscLocalization{
 -----------------
 L= DBM:GetModLocalization(99)
 
+L:SetGeneralLocalization({
+	name		= "Lord Walden"
+})
+
 L:SetWarningLocalization{
 	specWarnCoagulant	= "Green Mix - Keep Moving!",	-- Green light
 	specWarnRedMix		= "Red Mix - Do Not Move!"		-- Red light
@@ -300,6 +340,10 @@ L:SetOptionLocalization{
 -- Lord Godfrey --
 ------------------
 L= DBM:GetModLocalization(100)
+
+L:SetGeneralLocalization({
+	name		= "Lord Godfrey"
+})
 
 ---------------------
 --  The Stonecore  --
