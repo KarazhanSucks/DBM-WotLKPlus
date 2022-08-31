@@ -8,18 +8,18 @@ mod:SetCreatureID(61412)
 
 mod:RegisterCombat("combat")
 
-mod:RegisterEventsInCombat(
-	"SPELL_CAST_START 119300"
-)
+-- mod:RegisterEventsInCombat(
+-- 	"SPELL_CAST_START 119300"
+-- )
 
-local specWarnTwistedElements			= mod:NewSpecialWarningInterrupt(119300, "HasInterrupt", nil, nil, 1, 2)
+-- local specWarnTwistedElements			= mod:NewSpecialWarningInterrupt(119300, "HasInterrupt", nil, nil, 1, 2)
 
-function mod:SPELL_CAST_START(args)
-	if args.spellId == 119300 and self:CheckInterruptFilter(args.sourceGUID, false, true) then
-		specWarnTwistedElements:Show(args.sourceName)
-		specWarnTwistedElements:Play("kickcast")
-	end
-end
+-- function mod:SPELL_CAST_START(args)
+-- 	if args.spellId == 119300 and self:CheckInterruptFilter(args.sourceGUID, false, true) then
+-- 		specWarnTwistedElements:Show(args.sourceName)
+-- 		specWarnTwistedElements:Play("kickcast")
+-- 	end
+-- end
 
 -- function mod:SPELL_AURA_APPLIED(args)
 -- 	if args.spellId == 32346 then
