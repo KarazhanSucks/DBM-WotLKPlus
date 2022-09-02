@@ -1,0 +1,125 @@
+## Interface: 30300
+## Title:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Dungeons (1) (Classic)|r
+## Title-deDE:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Gruppe (1)-Classic|r
+## Title-esES:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Mazmorras (1) (Clásico)|r
+## Title-esMX:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Calabozos (1) (Clásico)|r
+## Title-ptBR:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Masmorras (1) (Clássico)|r
+## Title-frFR:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Donjons (1) (Classique)|r
+## Title-ruRU:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Подземелье (1) (классический)|r
+## Title-koKR:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0던전 (1) (클래식)|r
+## Title-zhTW:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0隊伍首領 (1)-傳統|r
+## Title-zhCN:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0队伍首领 (1)(经典旧世)|r
+
+## Author: MysticalOS
+## LoadOnDemand: 1
+## RequiredDeps: DBM-Core
+## SavedVariables: DBMPartyClassic1_AllSavedVars
+## SavedVariablesPerCharacter: DBMPartyClassic1_SavedStats
+## X-DBM-Mod: 1
+## X-DBM-Mod-Type: PARTY
+## X-DBM-Mod-Category: Classic
+## X-DBM-StatTypes: normal
+
+## X-DBM-Mod-SubCategoriesID: Blackfathom Deeps,The Deadmines,Ragefire Chasm,Razorfen Kraul,Shadowfang Keep,Stormwind Stockade,Wailing Caverns
+## X-DBM-Mod-SubCategoriesID-deDE: Tiefschwarze Grotte,Die Todesminen,Der Flammenschlund,Kral der Klingenhauer,Burg Schattenfang,Verlies von Sturmwind,Die Höhlen des Wehklagens
+## X-DBM-Mod-SubCategoriesID-esES: Cavernas de Brazanegra,Las Minas de la Muerte,Sima Ígnea,Horado Rajacieno,Castillo de Colmillo Oscuro,Mazmorras de Ventormenta,Cuevas de los Lamentos
+## X-DBM-Mod-SubCategoriesID-esMX: Cavernas de Brazanegra,Las Minas de la Muerte,Sima Ígnea,Horado Rajacieno,Castillo de Colmillo Oscuro,Mazmorras de Ventormenta,Cuevas de los Lamentos
+## X-DBM-Mod-SubCategoriesID-frFR: Profondeurs de Brassenoire,Les Mortemines,Gouffre de Ragefeu,Kraal de Tranchebauge,Donjon d’Ombrecroc,Prison de Hurlevent,Cavernes des Lamentations
+## X-DBM-Mod-SubCategoriesID-ruRU: Непроглядная Пучина,Мертвые копи,Огненная Пропасть,Лабиринты Иглошкурых,Крепость Темного Клыка,Тюрьма Штормграда,Пещеры Стенаний
+## X-DBM-Mod-SubCategoriesID-koKR: 검은심연 나락,죽음의 폐광,성난불길 협곡,가시덩굴 우리,그림자송곳니 성채,스톰윈드 지하감옥,통곡의 동굴
+## X-DBM-Mod-SubCategoriesID-zhTW: 黑澗深淵,死亡礦坑,怒焰裂谷,剃刀沼澤,影牙城堡,暴風城監獄,哀嚎洞穴
+## X-DBM-Mod-SubCategoriesID-zhCN: 黑暗深渊,死亡矿井,怒焰裂谷,剃刀沼泽,影牙城堡,暴风城监狱,哀嚎洞穴
+## X-DBM-Mod-MapID: 689,757,681,762,765,691,750
+## X-DBM-Mod-LoadZone-zhCN: 黑暗深渊,死亡矿井,怒焰裂谷,剃刀沼泽,影牙城堡,暴风城监狱,哀嚎洞穴
+
+## X-DBM-Mod-Name: Dungeons (1) (Classic)
+## X-DBM-Mod-Name-deDE: Gruppe (1) (Classic)
+## X-DBM-Mod-Name-esES: Mazmorras (1) (Clásico)
+## X-DBM-Mod-Name-esMX: Calabozos (1) (Clásico)
+## X-DBM-Mod-Name-ptBR: Masmorras (1) (Clássico)
+## X-DBM-Mod-Name-frFR: Donjons (1) (Classique)
+## X-DBM-Mod-Name-ruRU: Подземелье (1) (классический)
+## X-DBM-Mod-Name-koKR: 던전 (1) (클래식)
+## X-DBM-Mod-Name-zhTW: 隊伍首領 (1) (傳統)
+## X-DBM-Mod-Name-zhCN: 队伍首领 (1)(经典旧世)
+## X-DBM-Mod-Sort: 1115
+
+localization.en.lua
+localization.de.lua
+localization.es.lua
+localization.mx.lua
+localization.fr.lua
+localization.ru.lua
+localization.kr.lua
+localization.tw.lua
+localization.cn.lua
+
+BlackfathomDeeps\GhamooRa.lua
+BlackfathomDeeps\LadySerevess.lua
+BlackfathomDeeps\Gelihast.lua
+BlackfathomDeeps\TwilightLordKelris.lua
+BlackfathomDeeps\OldSerrakis.lua
+BlackfathomDeeps\Akumai.lua
+BlackfathomDeeps\Bathiel.lua
+BlackfathomDeeps\Domina.lua
+BlackfathomDeeps\Gore.lua
+BlackfathomDeeps\Guardian.lua
+BlackfathomDeeps\Korul.lua
+BlackfathomDeeps\Thruk.lua
+
+Deadmines\RhahkZor.lua
+Deadmines\MinerJohnson.lua
+Deadmines\SneedsShredder.lua
+Deadmines\Gilnid.lua
+Deadmines\MrSmite.lua
+Deadmines\CaptainGreenskin.lua
+Deadmines\EdwinVanCleef.lua
+Deadmines\Cookie.lua
+
+RagefireChasm\Oggleflint.lua
+RagefireChasm\Taragaman.lua
+RagefireChasm\Jergosh.lua
+RagefireChasm\Bazzalan.lua
+RagefireChasm\Adarogg.lua
+RagefireChasm\Koranthal.lua
+RagefireChasm\Slagmaw.lua
+RagefireChasm\Gordoth.lua
+
+RazorfenKraul\Roogug.lua
+RazorfenKraul\AggemThorncurse.lua
+RazorfenKraul\DeathSpeakerJargba.lua
+RazorfenKraul\OverlordRamtusk.lua
+RazorfenKraul\AgathelostheRaging.lua
+RazorfenKraul\BlindHunter.lua
+RazorfenKraul\EarthcallerHalmgar.lua
+RazorfenKraul\CharlgaRazorflank.lua
+
+Shadowfangkeep\Rethilgore.lua
+Shadowfangkeep\RazorclawtheButcher.lua
+Shadowfangkeep\BaronSilverlaine.lua
+Shadowfangkeep\CommanderSpringvale.lua
+Shadowfangkeep\OdotheBlindwatcher.lua
+Shadowfangkeep\DeathswornCaptain.lua
+Shadowfangkeep\FenrustheDevourer.lua
+Shadowfangkeep\WolfMasterNandos.lua
+Shadowfangkeep\ArchmageArugal.lua
+
+StormwindStockaid\Targorr.lua
+StormwindStockaid\KamDeepfury.lua
+StormwindStockaid\Hamhock.lua
+StormwindStockaid\BazilThredd.lua
+StormwindStockaid\DextrenWard.lua
+StormwindStockaid\BruegalIronknuckle.lua
+StormwindStockaid\Hogger.lua
+StormwindStockaid\LordOverheat.lua
+StormwindStockaid\Moloch.lua
+
+WailingCaverns\LadyAnacondra.lua
+WailingCaverns\LordPythas.lua
+WailingCaverns\LordCobrahn.lua
+WailingCaverns\Kresh.lua
+WailingCaverns\Skum.lua
+WailingCaverns\LordSerpentis.lua
+WailingCaverns\VerantheEverliving.lua
+WailingCaverns\MutanustheDevourer.lua
+WailingCaverns\DeviateFaerieDragon.lua

@@ -1,0 +1,192 @@
+## Interface: 30300
+## Title:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Dungeons (2) (Classic)|r
+## Title-deDE:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Gruppe (2)-Classic|r
+## Title-esES:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Mazmorras (2) (Clásico)|r
+## Title-esMX:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Calabozos (2) (Clásico)|r
+## Title-ptBR:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Masmorras (2) (Clássico)|r
+## Title-frFR:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Donjons (2) (Classique)|r
+## Title-ruRU:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Подземелье (2) (классический)|r
+## Title-koKR:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0던전 (2) (클래식)|r
+## Title-zhTW:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0隊伍首領- (2)傳統|r
+## Title-zhCN:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0队伍首领 (2)(经典旧世)|r
+
+## Author: MysticalOS
+## LoadOnDemand: 1
+## RequiredDeps: DBM-Core
+## SavedVariables: DBMPartyClassic2_AllSavedVars
+## SavedVariablesPerCharacter: DBMPartyClassic2_SavedStats
+## X-DBM-Mod: 1
+## X-DBM-Mod-Type: PARTY
+## X-DBM-Mod-Category: Classic
+## X-DBM-StatTypes: normal
+
+## X-DBM-Mod-Name: Dungeons (2) (Classic)
+## X-DBM-Mod-Name-deDE: Gruppe (2) (Classic)
+## X-DBM-Mod-Name-esES: Mazmorras (2) (Clásico)
+## X-DBM-Mod-Name-esMX: Calabozos (2) (Clásico)
+## X-DBM-Mod-Name-ptBR: Masmorras (2) (Clássico)
+## X-DBM-Mod-Name-frFR: Donjons (2) (Classique)
+## X-DBM-Mod-Name-ruRU: Подземелье (2) (классический)
+## X-DBM-Mod-Name-koKR: 던전 (2) (클래식)
+## X-DBM-Mod-Name-zhTW: 隊伍首領 (2) (傳統)
+## X-DBM-Mod-Name-zhCN: 队伍首领 (2)经典旧世)
+## X-DBM-Mod-Sort: 1116
+
+## X-DBM-Mod-SubCategoriesID: Blackrock Depths,Gnomeregan,Lower Blackrock Spire,Upper Blackrock Spire,Dire Maul,Maraudon,Razorfen Downs,Scarlet Monastery,Scholomance,Stratholme,Sunken Temple,Uldaman,Zul'Farrak
+## X-DBM-Mod-SubCategoriesID-deDE: Schwarzfelstiefen,Gnomeregan,Untere Schwarzfelsspitze,Obere Schwarzfelsspitze,Düsterbruch,Maraudon,Hügel der Klingenhauer,Das Scharlachrote Kloster,Scholomance,Stratholme,Versunkener Tempel,Uldaman,Zul'Farrak
+## X-DBM-Mod-SubCategoriesID-esES: Profundidades de Roca Negra,Gnomeregan,Cumbre de Roca Negra Inferior,Cumbre de Roca Negra Superior,La Masacre,Maraudon,Zahúrda Rajacieno,Monasterio Escarlata,Scholomance,Stratholme,Templo Sumergido,Uldaman,Zul'Farrak
+## X-DBM-Mod-SubCategoriesID-esMX: Profundidades de Roca Negra,Gnomeregan,Cumbre de Roca Negra inferior,Cumbre de Roca Negra superior,La Masacre,Maraudon,Zahúrda Rajacieno,Monasterio Escarlata,Scholomance,Stratholme,Templo Sumergido,Uldaman,Zul'Farrak
+## X-DBM-Mod-SubCategoriesID-frFR: Profondeurs de Rochenoire,Gnomeregan,Bas du pic Rochenoire,Sommet du pic Rochenoire,Hache-Tripes,Maraudon,Souilles de Tranchebauge,Monastère Écarlate,Scholomance,Stratholme,Temple englouti,Uldaman,Zul’Farrak
+## X-DBM-Mod-SubCategoriesID-ruRU: Глубины Черной горы,Гномреган,Нижняя часть пика Черной горы,Верхняя часть пика Черной горы,Забытый город,Мародон,Курганы Иглошкурых,Монастырь Алого ордена,Некроситет,Стратхольм,Затонувший храм,Ульдаман,Зул'Фаррак
+## X-DBM-Mod-SubCategoriesID-koKR: 검은바위 나락,놈리건,검은바위 첨탑 하층,검은바위 첨탑 상층,혈투의 전장,마라우돈,가시덩굴 구릉,붉은십자군 수도원,스칼로맨스,스트라솔름,가라앉은 사원,울다만,줄파락
+## X-DBM-Mod-SubCategoriesID-zhTW: 黑石深淵,諾姆瑞根,黑石塔下層,黑石塔上層,厄運之槌,瑪拉頓,剃刀高地,血色修道院,通靈學院,斯坦索姆,沉沒的神廟,奧達曼,祖爾法拉克
+## X-DBM-Mod-SubCategoriesID-zhCN: 黑石深渊,诺莫瑞根,黑石塔下层,黑石塔上层,厄运之槌,玛拉顿,剃刀高地,血色修道院,通灵学院,斯坦索姆,沉没的神庙,奥达曼,祖尔法拉克
+## X-DBM-Mod-MapID: 705,692,722,722,700,751,761,763,764,766,688,693,687
+## X-DBM-Mod-LoadZone-zhCN: 黑石深渊,诺莫瑞根,黑石塔下层,黑石塔上层,厄运之槌,玛拉顿,剃刀高地,血色修道院,通灵学院,斯坦索姆,沉没的神庙,奥达曼,祖尔法拉克
+
+localization.en.lua
+localization.de.lua
+localization.es.lua
+localization.mx.lua
+localization.fr.lua
+localization.ru.lua
+localization.kr.lua
+localization.tw.lua
+localization.cn.lua
+
+BlackrockDepths\Gerstahn.lua
+BlackrockDepths\LordRoccor.lua
+BlackrockDepths\HoundmasterGrebmar.lua
+BlackrockDepths\RingofLaw.lua
+BlackrockDepths\PyromancerLoregrain.lua
+BlackrockDepths\LordIncendius.lua
+BlackrockDepths\WardenStilgiss.lua
+BlackrockDepths\FineousDarkvire.lua
+BlackrockDepths\BaelGar.lua
+BlackrockDepths\GeneralAngerforge.lua
+BlackrockDepths\GolemLordArgelmach.lua
+BlackrockDepths\HurleyBlackbreath.lua
+BlackrockDepths\Phalanx.lua
+BlackrockDepths\PluggerSpazzring.lua
+BlackrockDepths\AmbassadorFlamelash.lua
+BlackrockDepths\TheSeven.lua
+BlackrockDepths\Magmus.lua
+BlackrockDepths\EmperorDagranThaurissan.lua
+
+Gnomeregan\Grubbis.lua
+Gnomeregan\ViscousFallout.lua
+Gnomeregan\Electrocutioner6000.lua
+Gnomeregan\CrowdPummeler.lua
+Gnomeregan\MekgineerThermaplugg.lua
+
+LowerBlackrockSpire\HighlordOmokk.lua
+LowerBlackrockSpire\ShadowHunterVoshgajin.lua
+LowerBlackrockSpire\WarMasterVoone.lua
+LowerBlackrockSpire\MotherSmolderweb.lua
+LowerBlackrockSpire\UrokDoomhowl.lua
+LowerBlackrockSpire\QuartermasterZigris.lua
+LowerBlackrockSpire\Halycon.lua
+LowerBlackrockSpire\Gizrul.lua
+LowerBlackrockSpire\OverlordWyrmthalak.lua
+
+UpperBlackrockSpire\PyroguardEmberseer.lua
+UpperBlackrockSpire\SolakarFlamewreath.lua
+UpperBlackrockSpire\GoralukAnvilcrack.lua
+UpperBlackrockSpire\JedRunewatcher.lua
+UpperBlackrockSpire\WarchiefRendBlackhand.lua
+UpperBlackrockSpire\TheBeast.lua
+UpperBlackrockSpire\GeneralDrakkisath.lua
+
+DireMaul\ZevrimThornhoof.lua
+DireMaul\Hydrospawn.lua
+DireMaul\Lethtendris.lua
+DireMaul\Alzzin.lua
+DireMaul\TendrisWarpwood.lua
+DireMaul\IllyannaRavensoak.lua
+DireMaul\MagisterKelendris.lua
+DireMaul\Immolthar.lua
+DireMaul\PrinceTortheldrin.lua
+DireMaul\GuardMoldar.lua
+DireMaul\StomperKreeg.lua
+DireMaul\GuardFengus.lua
+DireMaul\GuardSlipkik.lua
+DireMaul\CaptainKromcrush.lua
+DireMaul\ChoRush.lua
+DireMaul\KingGordok.lua
+
+Maraudon\Noxxion.lua
+Maraudon\Razorlash.lua
+Maraudon\TinkererGizlock.lua
+Maraudon\LordVyletongue.lua
+Maraudon\CelebrastheCursed.lua
+Maraudon\Landslide.lua
+Maraudon\Rotgrip.lua
+Maraudon\PrincessTheradras.lua
+
+RazorfenDowns\Tutenkash.lua
+RazorfenDowns\MordreshFireEye.lua
+RazorfenDowns\Glutton.lua
+RazorfenDowns\Ragglesnout.lua
+RazorfenDowns\AmnennartheColdbringer.lua
+RazorfenDowns\PlaguemawtheRotting.lua
+
+ScarletMonastery\InterrogatorVishas.lua
+ScarletMonastery\BloodmageThalnos.lua
+ScarletMonastery\HoundmasterLoksey.lua
+ScarletMonastery\ArcanistDoan.lua
+ScarletMonastery\Herod.lua
+ScarletMonastery\Mograine_and_Whitemane.lua
+ScarletMonastery\HighInquisitorFairbanks.lua
+
+Scholomance\KirtonostheHerald.lua
+Scholomance\JandiceBarov.lua
+Scholomance\Rattlegore.lua
+Scholomance\MardukBlackpool.lua
+Scholomance\Vectus.lua
+Scholomance\RasFrostwhisper.lua
+Scholomance\InstructorMalicia.lua
+Scholomance\DoctorTheolenKrastinov.lua
+Scholomance\LorekeeperPolkelt.lua
+Scholomance\TheRavenian.lua
+Scholomance\LordAlexeiBarov.lua
+Scholomance\LadyIlluciaBarov.lua
+Scholomance\DarkmasterGandling.lua
+
+Stratholme\HearthsingerForresten.lua
+Stratholme\TimmytheCruel.lua
+Stratholme\CommanderMalor.lua
+Stratholme\WilleyHopebreaker.lua
+Stratholme\InstructorGalford.lua
+Stratholme\Balnazzar.lua
+Stratholme\TheUnforgiven.lua
+Stratholme\BaronessAnastari.lua
+Stratholme\Narubenkan.lua
+Stratholme\MalekithePallid.lua
+Stratholme\MagistrateBarthilas.lua
+Stratholme\RamsteintheGorger.lua
+Stratholme\LordAuriusRivendare.lua
+
+SunkenTemple\AvatarofHakkar.lua
+SunkenTemple\JammalantheProphet.lua
+SunkenTemple\Dreamscythe.lua
+SunkenTemple\Weaver.lua
+SunkenTemple\Morphaz.lua
+SunkenTemple\Hazzas.lua
+SunkenTemple\ShadeofEranikus.lua
+
+Uldaman\Revelosh.lua
+Uldaman\TheLostDwarves.lua
+Uldaman\Ironaya.lua
+Uldaman\ObsidianSentinel.lua
+Uldaman\AncientStoneKeeper.lua
+Uldaman\GalgannFirehammer.lua
+Uldaman\Grimlok.lua
+Uldaman\Archaedas.lua
+
+ZulFarrak\Gahzrilla.lua
+ZulFarrak\Antusul.lua
+ZulFarrak\ThekatheMartyr.lua
+ZulFarrak\WitchDoctorZumrah.lua
+ZulFarrak\HydromancerVelrath.lua
+ZulFarrak\Nekrum_Sezzziz.lua
+ZulFarrak\ChiefUkorzSandscalp.lua
