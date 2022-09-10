@@ -1,0 +1,40 @@
+## Interface: 30300
+## X-Min-Interface: 80000
+## Title:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Lost City of the Tol'vir|r
+## Title-deDE:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Die verlorene Stadt der Tol'vir|r
+## Title-esES:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Ciudad Perdida de los Tol'vir|r
+## Title-koKR:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0톨비르의 잃어버린 도시|r
+## Title-ruRU:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Затерянный город Тол'вир|r
+## Title-zhTW:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0托維爾的失落之城|r
+## Title-zhCN:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0托维尔失落之城|r
+## Title-ptBR:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Cidade Perdida dos Tol'vir|r
+## Author: MysticalOS
+## LoadOnDemand: 1
+## RequiredDeps: DBM-Core
+## SavedVariables: DBMLostCityOfTheTolvir_AllSavedVars
+## SavedVariablesPerCharacter: DBMLostCityOfTheTolvir_SavedStats
+## X-DBM-Mod: 1
+## X-DBM-Mod-Type: RAID
+## X-DBM-Mod-Category: CATA
+## X-DBM-StatTypes: normal,heroic,mythic
+## X-DBM-Mod-MapID: 644
+## X-DBM-Mod-Sort: 804
+## X-DBM-Mod-MinCoreRevision: 20200524142133
+## X-DBM-Mod-MinExpansion: 3
+## X-DBM-Mod-Name: Lost City Of The Tolvir
+## Version: @project-version@
+
+localization.en.lua
+localization.de.lua
+localization.es.lua
+localization.fr.lua
+localization.kr.lua
+localization.ru.lua
+localization.tw.lua
+localization.cn.lua
+localization.br.lua
+Augh.lua
+GeneralHusam.lua
+HighProphetBarim.lua
+Lockmaw.lua
+Siamat.lua

@@ -219,7 +219,7 @@ L:SetGeneralLocalization({
 --------------------------------
 -- General Husam --
 -------------------
-L= DBM:GetModLocalization(117)
+L= DBM:GetModLocalization(11700)
 
 L:SetGeneralLocalization({
 	name		= "General Husam"
@@ -228,7 +228,7 @@ L:SetGeneralLocalization({
 --------------
 -- Lockmaw --
 --------------
-L= DBM:GetModLocalization(118)
+L= DBM:GetModLocalization(11800)
 
 L:SetGeneralLocalization({
 	name		= "Lockmaw"
@@ -241,7 +241,7 @@ L:SetOptionLocalization{
 ----------
 -- Augh --
 ----------
-L = DBM:GetModLocalization("Augh")
+L = DBM:GetModLocalization(12000)
 
 L:SetGeneralLocalization({
 	name		= "Augh"
@@ -254,7 +254,7 @@ L:SetGeneralLocalization({
 ------------------------
 -- High Prophet Barim --
 ------------------------
-L= DBM:GetModLocalization(119)
+L= DBM:GetModLocalization(11900)
 
 L:SetGeneralLocalization({
 	name		= "High Prophet Barim"

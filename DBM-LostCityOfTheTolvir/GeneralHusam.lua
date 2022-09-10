@@ -1,4 +1,4 @@
-local mod	= DBM:NewMod(11700, "DBM-Party-Cataclysm", 5, 69)
+local mod	= DBM:NewMod(117, "DBM-LostCityOfTheTolvir", 5, 69)
 local L		= mod:GetLocalizedStrings()
 
 mod.statTypes = "normal,heroic,mythic"
