@@ -420,6 +420,7 @@ DBM:RegisterMapSize("ZulAman",				0, 1268.749938962, 845.833312988) -- Zul'Aman 
 DBM:RegisterMapSize("ZulDrak",				0, 4993.75, 3329.16650391)
 DBM:RegisterMapSize("ZulFarrak",			0, 1383.3332214359998, 922.91662597) -- Zul'Farrak (Party-Classic)
 DBM:RegisterMapSize("ZulGurub",				0, 2120.83325195, 1414.5830078) -- Zul'Gurub (Raid-Classic)
+DBM:RegisterMapSize("LostCityofTolvir",				0, 970.83317, 647.923) -- Tol'Vir (Cataclysm)
 
 local _, private = ...
 
