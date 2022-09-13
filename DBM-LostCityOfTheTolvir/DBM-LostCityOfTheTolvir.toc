@@ -17,7 +17,7 @@
 ## X-DBM-Mod-Type: RAID
 ## X-DBM-Mod-Category: CATA
 ## X-DBM-StatTypes: normal,heroic,mythic
-## X-DBM-Mod-MapID: 644
+## X-DBM-Mod-MapID: 748
 ## X-DBM-Mod-Sort: 804
 ## X-DBM-Mod-MinCoreRevision: 20200524142133
 ## X-DBM-Mod-MinExpansion: 3
